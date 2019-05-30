@@ -11,6 +11,11 @@ This releases two containers, one of Drupal running on port 8080 and another of 
 To stop these things, type:
 	
 	> docker-compose down
+	
+To remove the volumes as well, use:
+
+	> docker-compose down -v
+
 
 
 #Drupal
