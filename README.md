@@ -2,13 +2,20 @@
 This is to Launch drupal container with postgres database
 This contains a docker-compose file to launch drupal in a container with database as postgres.
 Start the containers by typing this:
+	
 	> docker-compose up
 
 This releases two containers, one of Drupal running on port 8080 and another of postgres. This also creates a docker network. Also the data of postgres and Drupal is persistantly stored through docker volumes.
 
 
 To stop these things, type:
+	
 	> docker-compose down
+	
+To remove the volumes as well, use:
+
+	> docker-compose down -v
+
 
 
 The webportal of drupal can be accessed from the webbrowser on port 8080
